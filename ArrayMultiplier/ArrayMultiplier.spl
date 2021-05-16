@@ -1,0 +1,9 @@
+[Inputs]
+=a[15:0]=
+=b[15:0]=
+[Outputs]
+=p[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel ArrayMultiplier
+
