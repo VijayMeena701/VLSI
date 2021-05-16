@@ -1,0 +1,5 @@
+vhdtdtfi -lib work /home/vijay/Desktop/Vlsi/ced18i054_exp_7/paritygen.v -lang verilog -prj parity -o paritygen.spl -module paritygen -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex7 paritygen.spl /home/vijay/Desktop/Vlsi/parity/paritygen.sym 
+xst -intstyle ise -ifn "/home/vijay/Desktop/Vlsi/parity/paritygen.xst" -ofn "/home/vijay/Desktop/Vlsi/parity/paritygen.syr" 
+vhdtdtfi -lib work /home/vijay/Desktop/Vlsi/parity/parity.v -lang verilog -prj parity -o paritygen.spl -module paritygen -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex7 paritygen.spl /home/vijay/Desktop/Vlsi/parity/paritygen.sym 
